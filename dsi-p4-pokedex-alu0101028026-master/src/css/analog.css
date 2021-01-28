@@ -1,0 +1,48 @@
+body {
+  background-color: white;
+  align-items: center;
+  display: flex;
+  flex:1;
+
+}
+
+.clock {
+  width: 350px;
+  height: 350px;
+  border: 20px solid black;
+  border-radius: 50%;
+  margin: auto;
+  margin-top: 10%;
+  position: relative;
+
+}
+
+.inside {
+  width: 50%;
+  height: 2px;
+  
+  position: absolute;
+  top: 50%;
+  transform-origin: 100%;
+  transform: rotate(90deg);
+  transition: all 0.05s;
+  transition-timing-function: cubic-bezier(0.1, 2.7, 0.58, 1);
+  background: black;
+}
+
+
+.sec {
+	background: red;
+}
+.min {
+  
+  height: 8px;
+ 
+}
+
+.hour {
+  
+  height: 16px;
+}
+
+

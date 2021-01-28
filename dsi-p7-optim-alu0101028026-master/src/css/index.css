@@ -1,0 +1,267 @@
+@import url("https://fonts.googleapis.com/css2?family=Signika:wght@600&display=swap|Scope+One");
+
+:root {
+  --header-font: Signika, serif;
+  --normal-font: "Scope One", sans-serif;
+  scroll-behavior: smooth;
+}
+
+body {
+  background: black;
+  color: white;
+  font-family: var(--normal-font);
+  font-size: 18px;
+  margin: 0;
+}
+
+h1,
+h2 {
+  font-family: var(--header-font);
+  margin: 0;
+  text-align: center;
+  z-index: 10;
+}
+
+h1 {
+  font-size: 3rem;
+}
+h2 {
+  font-size: 2.5rem;
+}
+
+.topbar {
+  background: rgba(0, 0, 0, 0.85);
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  top: 0;
+  z-index: 5;
+  width: 100%;
+  font-size: 1.25rem;
+
+  & .block {
+    padding: 16px 20px;
+  }
+
+  & .social a {
+    padding: 0 4px;
+    font-size: 1.5rem;
+  }
+
+  & a {
+    font-family: var(--header-font);
+    color: white;
+  }
+}
+
+.banner {
+  display: flex;
+  justify-content: center;
+  background: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.25)), url(../assets/classroom.jpg) center;
+  background-size: cover;
+  min-height: 100vh;
+  height: auto;
+  padding-bottom: 2em;
+}
+
+.inner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  margin-top: 4em;
+  padding: 1em;
+  font-size: 2rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+
+  & p {
+    max-width: 950px;
+    margin: 2em 1em 0 1em;
+    text-align: center;
+  }
+}
+
+video {
+  margin: 1em;
+  width: 700px;
+  border: 10px solid black;
+}
+
+@media screen and (max-width: 875px) {
+  video {
+    width: 500px;
+  }
+}
+
+@media screen and (max-width: 675px) {
+  video {
+    display: none;
+  }
+  .button {
+    margin: 3em;
+  }
+}
+
+.text {
+  font-size: 2rem;
+  text-align: center;
+  padding: 1em 2em;
+
+  & p {
+  }
+
+  & video {
+    border-color: white;
+  }
+}
+
+section {
+  padding-top: 2em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat(4, 1fr);
+  padding-top: 3em;
+
+  & img {
+    max-width: 100%;
+  }
+}
+
+.grid.gallery {
+  & img {
+    border: 8px solid #fff;
+  }
+}
+
+.practices.gallery {
+  --number-columns: 4;
+
+  grid-template-columns: repeat(var(--number-columns), 300px);
+  grid-template-rows: repeat(2, 300px);
+  text-align: center;
+  justify-content: center;
+  align-items: stretch;
+
+  & figure {
+    background: linear-gradient(134deg, transparent 70%, #999 80%), linear-gradient(211deg, #fff, #aaa);
+    padding: 2em;
+    color: black;
+    font-size: 1.2rem;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .practices.gallery {
+    --number-columns: 3;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .practices.gallery {
+    --number-columns: 2;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .practices.gallery {
+    --number-columns: 1;
+  }
+}
+
+a.button {
+  font-family: var(--header-font);
+  font-size: 1.5rem;
+  text-decoration: none;
+  color: white;
+  padding: 20px;
+  border: 2px solid white;
+  border-radius: 10px;
+  background-color: transparent;
+  transition: background-color 0.5s;
+
+  &:hover {
+    background: black;
+  }
+}
+
+code {
+  color: orangered;
+}
+
+span.name {
+  color: chartreuse;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  background: #222;
+  margin-top: 2em;
+  padding: 1em;
+
+  & p {
+    margin: 0;
+  }
+
+  & a {
+    color: cyan;
+  }
+}
+
+.report {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0;
+}
+
+del {
+  color: #555;
+  text-decoration: none;
+}
+
+table {
+  border: 1px solid #aaa;
+  padding: 4px;
+  margin: 2em 0;
+}
+
+th {
+  background: #222;
+  padding: 8px;
+}
+
+td {
+  border: 1px solid #111;
+  padding: 8px;
+}
+
+@media screen and (max-width: 1100px) {
+  .report {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  table {
+    width: 80%;
+    text-align: center;
+    font-size: 1.25rem;
+  }
+  tr td:nth-child(1) {
+    background: #111;
+  }
+  th,
+  td {
+    display: block;
+  }
+}

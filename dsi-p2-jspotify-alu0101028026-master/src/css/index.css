@@ -1,0 +1,106 @@
+body {
+
+	background-image: url(../assets/images/retro.jpg);
+	background-size: 100% 100%;
+}
+
+.flex {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.cover {
+	width: 200px;
+	height: 200px;
+	background-size: 200px 200px;
+}
+
+.cov1 {
+	background-image: url(../assets/images/calma.jpg);
+}
+
+.cov2 {
+	background-image: url(../assets/images/malo.jpg);
+}
+
+.cov3 {
+	background-image: url(../assets/images/raining.jpg);
+}
+
+.cov4 {
+	background-image: url(../assets/images/whine.jpg);
+}
+
+@keyframes circle {
+    from { transform: translateX(-100px) rotate(0deg); }
+    to { transform: translateX(-100px) rotate(360deg); }
+}
+
+
+.vinyl {
+	width: 200px;
+	height: 200px;
+	background: black;
+	
+	border-radius: 50%;
+	z-index: -1; 
+	transform: translateX(-200px) ; 
+	transition: transform 0.5s;
+	 
+}
+
+.open {
+	transform: translateX(-100px);
+	animation: circle 5s linear infinite;
+}
+
+.label {
+	border-radius: 50%;
+	width: 75px;
+	height: 75px;
+	background-size: 100% 100%;
+}
+
+.l1 {
+	background-image: url(../assets/images/calma.jpg);
+}
+
+.l2 {
+	background-image: url(../assets/images/malo.jpg);
+}
+
+.l3 {
+	background-image: url(../assets/images/raining.jpg);
+}
+
+.l4 {
+	background-image: url(../assets/images/whine.jpg);
+}
+
+.hole {
+	background-color: white;
+	border-radius: 50%;
+	width: 20px;
+	height: 20px;
+}
+
+.button {
+  background-color: white;
+  border: none;
+  color: #d3d3d3;
+  padding: 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 50px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 12px;
+  
+}
+
+.button:focus { background-color: #152B40;}
+
+
+

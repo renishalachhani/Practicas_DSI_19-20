@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DSI1920 - dsi-p7-optim</title>
+    <link rel="stylesheet" href="./css/index.css" />
+    <script defer src="./js/index.js"></script>
+  </head>
+  <body>
+    <header>
+      <div class="topbar">
+        <div class="block"><a href="./index.html">P7</a>: <span class="name"></span></div>
+        <div class="social block">
+          <a href=""><i class="fab fa-github"></i></a>
+          <a href=""><i class="fab fa-codepen"></i></a>
+          <a href=""><i class="fab fa-facebook"></i></a>
+          <a href=""><i class="fab fa-youtube"></i></a>
+        </div>
+      </div>
+
+      <div class="banner">
+        <div class="inner">
+          <h1>Desarrollo de sistemas informáticos</h1>
+          <p>
+            El objetivo de esta práctica es disminuir el tiempo de carga de una página, optimizando sus recursos.
+          </p>
+          <video class="central" autoplay preload="auto">
+            <source src="./assets/typing_out.avi" />
+            
+          </video>
+
+          <a class="button" href="#target">Seguir leyendo</a>
+        </div>
+      </div>
+    </header>
+
+    <section id="target">
+      <h2>Objetivo</h2>
+
+      <div class="text">
+        <p>
+          En la práctica 7, nos enfocaremos en <code>reducir</code> el tiempo que tarda en cargarse una página web.
+          Entre otras, una de las formas más efectivas es optimizar los recursos que lo forman, intentando disminuir su
+          tamaño, pero sin perder calidad.
+        </p>
+
+        <p>
+          Para ello, podemos usar múltiples herramientas como <code>ffmpeg</code>, <code>optiPNG</code>,
+          <code>SVGO</code> u otras. A continuación podemos ver al alumno <span class="name"></span>, preparándose para
+          optimizar la web:
+        </p>
+
+        <del>Aquí tenemos un video gracioso de Youtube grabado por Screen Recorder:</del>
+
+	<video class="central" autoplay preload="auto">
+		<source src="./assets/dsi7_out_cut.ogv" />
+	</video>		
+
+        <p>A continuación, tenemos el audio de una canción graciosa y famoso por Tik Tok grbado por el movil:</p>
+	<audio controls>
+		<source src="./assets/dsi_out.ogg" type="audio/mpeg">
+	</audio>
+	<audio controls>
+		<source src="./assets/havana_out.ogg" type="audio/mpeg">
+	</audio>
+	
+
+        
+      </div>
+    </section>
+
+    <section id="gallery">
+      <h2>Galería</h2>
+
+      <div class="text">
+        <p>
+          En la siguiente galería, puedes encontrar varias imágenes JPEG con varios compañeros de
+          <span class="name"></span>, ayudándose entre sí para terminar las prácticas en la era pre-covid19. Atentos a
+          las cuatro últimas imágenes, obras maestras de <span class="name"></span>:
+        </p>
+      </div>
+
+      <div class="grid gallery">
+        <figure class="item item1">
+          <img src="./assets/laptop_out.jpg" alt="Laptop with JS code" />
+          <figcaption>No he visto un <code>async</code> en mi bida, Hulio</figcaption>
+        </figure>
+        <figure class="item item2">
+          <img src="./assets/reunion_out.jpg" alt="Reunión de compañeros" />
+          <figcaption>El tío de la derecha no está programando</figcaption>
+        </figure>
+        <figure class="item item3">
+          <img src="./assets/thinking_out.jpg" alt="Thinking lost face" />
+          <figcaption>¿Por qué no compila?</figcaption>
+        </figure>
+        <figure class="item item4">
+          <img src="./assets/dark_out.jpg" alt="Dark programming" />
+          <figcaption>Desde que termine me pongo con el LOL</figcaption>
+        </figure>
+        <figure class="item item5">
+          <img src="./assets/postureo_out.jpg" alt="Mirada fija" />
+          <figcaption>Filtrito y ya tengo story "pal" instagram</figcaption>
+        </figure>
+        <figure class="item item6">
+          <img src="./assets/do-more_out.jpg" alt="Haz más. No es suficiente." />
+          <figcaption>Lo que me piden en las prácticas</figcaption>
+        </figure>
+        <figure class="item item7">
+          <img src="./assets/semicolon_out.jpg" alt="Mucho código." />
+          <figcaption>¿Dónde me faltó el <code>punto y coma</code>?</figcaption>
+        </figure>
+        <figure class="item item8">
+          <img src="./assets/thinking_out.jpg" alt="Mirada fija, nuevamente." />
+          <figcaption>¿Por qué SI compila?</figcaption>
+        </figure>
+
+        <figure class="item item9">
+          <img src="./assets/campus.png" alt="Campus Virtual." />
+          <figcaption>Tareas de DSI.</figcaption>
+        </figure>
+        <figure class="item item10">
+          <img src="./assets/github.png" alt="Página de Github." />
+          <figcaption>Github de alu0101028026.</figcaption>
+        </figure>
+        <figure class="item item11">
+          <img src="./assets/speakers_out.jpg" alt="Altavoces Bluetooth." />
+          <figcaption>Que bonitos son ¿no?</figcaption>
+        </figure>
+        <figure class="item item12">
+          <img src="./assets/ball_out.jpg" alt="Pelota brillante." />
+          <figcaption>Brilla más que mi futuro :|</figcaption>
+        </figure>
+
+      </div>
+    </section>
+
+    <section id="report" class="report-container">
+      <h2>Informe de optimización</h2>
+
+      <div class="report"></div>
+    </section>
+
+    <section id="practices">
+      <h2>Prácticas</h2>
+
+      <div class="practices gallery">
+        <figure>
+          <a href="https://parceljs.org/">
+            <img src="./assets/parcel.png" alt="Parcel" />
+          </a>
+          <figcaption>Parcel</figcaption>
+        </figure>
+
+        <figure>
+          <a href="https://lenguajejs.com/">
+            <img src="./assets/js.svg" alt="Javascript" />
+          </a>
+          <figcaption>Javascript</figcaption>
+        </figure>
+
+        <figure>
+          <a href="https://developer.mozilla.org/en-US/docs/Web/API/SpeechSynthesis">
+            <img src="./assets/speech.svg" alt="Speech Synth" />
+          </a>
+          <figcaption>Synth API</figcaption>
+        </figure>
+
+        <figure>
+          <a href="https://postcss.org/">
+            <img src="./assets/postcss.svg" alt="PostCSS" />
+          </a>
+          <figcaption>PostCSS</figcaption>
+        </figure>
+
+        <figure>
+          <a href="https://developers.google.com/web/fundamentals/web-components?hl=es">
+            <img src="./assets/webcomponents.svg" alt="WebComponents" />
+          </a>
+          <figcaption>WebComponents</figcaption>
+        </figure>
+
+        <figure>
+          <a href="https://vuejs.org/">
+            <img src="./assets/vuejs.svg" alt="VueJS" />
+          </a>
+          <figcaption>VueJS</figcaption>
+        </figure>
+
+        <figure>
+          <a href="https://www.youtube.com/watch?v=zIV_JLgBxbs">
+            <img src="./assets/optimization.svg" alt="Optimización" />
+          </a>
+          <figcaption>Optimización</figcaption>
+        </figure>
+
+        <figure>
+          <a href="https://www.docker.com/">
+            <img src="./assets/docker.svg" alt="Docker" />
+          </a>
+          <figcaption>Docker</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <footer>
+      <p>¡Ahora toca optimizar esta página!</p>
+      <p>Template by <a href="https://twitter.com/Manz">Manz</a></p>
+    </footer>
+  </body>
+</html>

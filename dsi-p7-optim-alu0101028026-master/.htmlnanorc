@@ -1,0 +1,16 @@
+{
+   "removeComments": false,
+   "collapseAttributeWhitespace": true,
+   "deduplicateAttributeValues": true,
+   "removeEmptyAttributes": true,
+   "removeUnusedCss": {
+       "tool": "purgeCSS",
+       "whitelist": [".do-not-remove"]
+   },
+   "minifyCss": {
+       "preset": ["default", {}]
+   },
+   "minifyJs": {
+       "output": { "quote_style": 1 }
+   },
+}

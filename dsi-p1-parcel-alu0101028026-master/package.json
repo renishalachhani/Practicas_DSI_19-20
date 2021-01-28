@@ -1,0 +1,41 @@
+{
+  "name": "dsi-p1-parcel-alu0101028026",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "dev": "parcel src/index.html",
+    "build": "parcel build src/index.html --public-url /dsi-p1-parcel-alu0101028026/ -d build",
+    "deploy": "npx gh-pages -d dist",
+    "start": "parcel src/index.html --host 10.6.129.78 -p 8081", 
+    "clean-source": "src/"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "pretty-quick --staged"
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ULL-ESIT-DSI-1920/dsi-p1-parcel-alu0101028026.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ULL-ESIT-DSI-1920/dsi-p1-parcel-alu0101028026/issues"
+  },
+  "homepage": "https://github.com/ULL-ESIT-DSI-1920/dsi-p1-parcel-alu0101028026#readme",
+  "devDependencies": {
+    "eslint": "^6.8.0",
+    "eslint-config-google": "^0.14.0",
+    "eslint-plugin-react": "^7.19.0",
+    "gh-pages": "^2.2.0",
+    "gh-pages-deploy": "^0.5.1",
+    "husky": "^4.2.3",
+    "parcel-bundler": "^1.12.4",
+    "prettier": "2.0.2",
+    "pretty-quick": "^2.0.1"
+  },
+  "dependencies": {},
+  "description": ""
+}
